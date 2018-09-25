@@ -1,7 +1,8 @@
 $(function() {
 
+// Using WP api 'categories' to display list of companies
 const apiRoot = 'https://perspectivemagazine.com/wp-json',
-			articleContainer = $('main#main');
+	  articleContainer = $('main#main');
 let listCat = {};
 
 listCat.init = function() {
@@ -18,6 +19,11 @@ listCat.init = function() {
 
 };
 listCat.init();
+
+// Using WP api 'posts' to show posts by category company name
+const apiPost = 'https://perspectivemagazine.com/wp-json',
+	  postContainer = $()
+
 
 listCat.render = function( categories ) {
 
