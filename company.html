@@ -1,27 +1,7 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<div id="page">
+<div class="container">
+	Company List
+	<div ng-repeat="company in companies">
+		<a href="#/company/{{$index}}">{{ company.name }}</a>
+	</div>
 
-			<div id="content">
-
-					<div id="primary">
-						<main id="main2">
-						</main>
-					</div>
-
-					<div id="secondary">
-					</div>
-
-				</div>
-			</div>
-		</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
-		<script src="index.js" charset="utf-8"></script>
-	</body>
-</html>
+</div>
