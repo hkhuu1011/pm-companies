@@ -1,7 +1,8 @@
 <div class="container">
 	Company Articles
-	<!-- <div ng-repeat="company in companies">
-		<a href="#/company/{{ company.id }}">{{ company.name }}</a>
-	</div> -->
+	<div ng-repeat="article in articles">
+		<!-- <a href="#/company/{{ company.id }}">{{ company.name }}</a> -->
+		{{ article.title.rendered }}
+	</div>
 
 </div>
