@@ -10,6 +10,10 @@ app.config(function ($routeProvider) {
 			controller: 'CompanyController',
 			templateUrl: 'views/company.html'
 		})
+		.when('/:slug/:id/:article', {
+			controller: 'CompanyController',
+			templateUrl: 'views/article.html'
+		})
 		.otherwise({
 			redirectTo: '/'
 		});
