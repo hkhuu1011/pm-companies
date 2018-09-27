@@ -14,3 +14,10 @@ app.config(function ($routeProvider) {
 			redirectTo: '/'
 		});
 });
+
+// Filter to remove HTML tags in content
+app.filter('removeHTMLTags', function() {
+	return function(text) {
+		return  text ? String(text).replace(/<[^>]+>/gm, '') : '';
+	};
+});
