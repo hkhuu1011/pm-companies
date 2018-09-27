@@ -6,7 +6,7 @@ app.config(function ($routeProvider) {
 			controller: 'HomeController',
 			templateUrl: 'views/home.html'
 		})
-		.when('/:slug/:id', {
+		.when('/companies/:id', {
 			controller: 'CompanyController',
 			templateUrl: 'views/company.html'
 		})

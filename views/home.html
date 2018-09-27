@@ -1,7 +1,7 @@
-<div class="container">
+<div class="container" ng-controller="HomeController">
 	Company List
 	<div ng-repeat="company in companies">
-		<a href="#/{{ company.slug }}/{{ company.id }}">{{ company.name }}</a>
+		<a href="#/companies/{{ company.id }}">{{ company.name }}</a>
 	</div>
 
 </div>
