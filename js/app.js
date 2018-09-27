@@ -26,5 +26,20 @@ app.filter('removeHTMLTags', function() {
 app.filter('ellipses', function () {
   return function (input) {
       return input.replace(/&hellip;/g, '...');
+       return input.replace(/&#8217;/g, '\'');
+  };
+});
+
+// Filter to replace &#8217 with '
+app.filter('apostrophe', function () {
+  return function (input) {
+      return input.replace(/&#8217;/g, '\'');
+  };
+});
+
+// Filter to replace &#8217 with '
+app.filter('hyphen', function () {
+  return function (input) {
+      return input.replace(/&#8211;/g, '-');
   };
 });
