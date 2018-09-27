@@ -21,3 +21,10 @@ app.filter('removeHTMLTags', function() {
 		return  text ? String(text).replace(/<[^>]+>/gm, '') : '';
 	};
 });
+
+// Filter to replace &hellip with ...
+app.filter('ellipses', function () {
+  return function (input) {
+      return input.replace(/&hellip;/g, '...');
+  };
+});
