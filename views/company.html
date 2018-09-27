@@ -2,7 +2,7 @@
 	Company Articles
 	<div ng-repeat="post in posts">
 		{{ post.title.rendered }}
-		<!-- {{ post.content.rendered }} -->
+		{{ post.content.rendered | removeHTMLTags }}
 	</div>
 
 </div>
