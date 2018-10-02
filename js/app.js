@@ -47,3 +47,10 @@ app.filter('hyphen', function () {
       return input.replace(/&#8211;/g, '-');
   };
 });
+
+// Filter to replace &amp; with &
+app.filter('ampersand', function () {
+  return function (input) {
+      return input.replace(/&amp;/g, '&');
+  };
+});
