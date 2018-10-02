@@ -5,10 +5,18 @@ app.controller('HomeController', ['$scope', 'companies', function($scope, compan
 	});
 }]);
 
-app.controller('CompanyController', ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http) {
-	$http.get('https://perspectivemagazine.com/wp-json/wp/v2/posts?categories=' + $routeParams.id)
-	.success(function(data) {
-		$scope.posts = data;
-		console.log('posts', $scope.posts);
-	});
+app.controller('CompanyController', ['$scope', '$rootScope', '$routeParams', '$http', 'articles', function($scope, $rootScope, $routeParams, $http, articles) {
+	articles.success(function(data) {
+		$scope.articles = data;
+		console.log('articles', $scope.articles);
+	})
+
+}]);
+
+app.controller('ArticleController', ['$scope', '$rootScope', '$routeParams', '$http', 'articles', function($scope, $rootScope, $routeParams, $http, articles) {
+	articles.success(function(data) {
+		$scope.post = data[$routeParams.id];
+		console.log('posts', $scope.post);
+	})
+
 }]);
