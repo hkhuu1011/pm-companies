@@ -1,10 +1,10 @@
-<div class="container">
-	<div ng-repeat="post in posts">
+<div class="container" ng-controller="CompanyController">
+	<div ng-repeat="article in articles">
 		<div class="section-article">
-			<a href="#/{{ post.slug }}/{{ post.id }}/{{ post.slug}}"><img style="width: 400px; height: 400px;" ng-src="{{ post.better_featured_image.source_url}}" /></a>
-			<h3>{{ post.title.rendered | apostrophe }}</h3>
-			<small>{{ post.date | date }}</small>
-			<p>{{ post.excerpt.rendered | removeHTMLTags | ellipses | apostrophe | hyphen }}</p>
+			<a href="#/{{ article.slug }}/{{ article.id }}/{{ $index }}"><img style="width: 400px; height: 400px;" ng-src="{{ article.better_featured_image.source_url}}" /></a>
+			<h3>{{ article.title.rendered | apostrophe }}</h3>
+			<small>{{ article.date | date }}</small>
+			<p>{{ article.excerpt.rendered | removeHTMLTags | ellipses | apostrophe | hyphen }}</p>
 		</div>
 	</div>
 
