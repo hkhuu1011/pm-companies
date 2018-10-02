@@ -4,7 +4,7 @@
 			<a href="#/{{ article.slug }}/{{ article.id }}/{{ $index }}"><img style="width: 400px; height: 400px;" ng-src="{{ article.better_featured_image.source_url}}" /></a>
 			<h3>{{ article.title.rendered | apostrophe }}</h3>
 			<small>{{ article.date | date }}</small>
-			<p>{{ article.excerpt.rendered | removeHTMLTags | ellipses | apostrophe | hyphen }}</p>
+			<p>{{ article.excerpt.rendered | removeHTMLTags | ellipses | apostrophe | hyphen | ampersand }}</p>
 		</div>
 	</div>
 
