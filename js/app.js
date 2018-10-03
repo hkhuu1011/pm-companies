@@ -30,7 +30,6 @@ app.filter('removeHTMLTags', function() {
 app.filter('ellipses', function () {
   return function (input) {
       return input.replace(/&hellip;/g, '...');
-       return input.replace(/&#8217;/g, '\'');
   };
 });
 
@@ -41,7 +40,21 @@ app.filter('apostrophe', function () {
   };
 });
 
-// Filter to replace &#8217 with '
+// Filter to replace &amp; with "
+app.filter('quote1', function () {
+  return function (input) {
+      return input.replace(/&#8220;/g, '\"');
+  };
+});
+
+// Filter to replace &amp; with "
+app.filter('quote2', function () {
+  return function (input) {
+      return input.replace(/&#8221;/g, '\"');
+  };
+});
+
+// Filter to replace &#8217 with -
 app.filter('hyphen', function () {
   return function (input) {
       return input.replace(/&#8211;/g, '-');
@@ -54,3 +67,4 @@ app.filter('ampersand', function () {
       return input.replace(/&amp;/g, '&');
   };
 });
+
