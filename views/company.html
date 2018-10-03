@@ -2,9 +2,9 @@
 	<div ng-repeat="article in articles">
 		<div class="section-article">
 			<a href="#/{{ article.slug }}/{{ article.id }}/{{ $index }}"><img style="width: 400px; height: 400px;" ng-src="{{ article.better_featured_image.source_url}}" /></a>
-			<h3>{{ article.title.rendered | apostrophe }}</h3>
+			<h3>{{ article.title.rendered | ellipses | apostrophe | quote1 | quote2 | hyphen | ampersand }}</h3>
 			<small>{{ article.date | date }}</small>
-			<p>{{ article.excerpt.rendered | removeHTMLTags | ellipses | apostrophe | hyphen | ampersand }}</p>
+			<p>{{ article.excerpt.rendered | removeHTMLTags | ellipses | apostrophe | quote1 | quote2 | hyphen | ampersand }}</p>
 		</div>
 	</div>
 

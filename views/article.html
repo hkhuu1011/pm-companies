@@ -1,9 +1,9 @@
 <div class="container">
 	<div class="section-article">
 		<img style="width: 400px; height: 400px;" ng-src="{{ post.better_featured_image.source_url}}" />
-		<h3>{{ post.title.rendered | apostrophe }}</h3>
+		<h3>{{ post.title.rendered | ellipses | apostrophe | quote1 | quote2 | hyphen | ampersand }}</h3>
 		<small>{{ post.date | date }}</small>
-		<p>{{ post.content.rendered | removeHTMLTags | ellipses | apostrophe | hyphen | ampersand }}</p>
+		<p>{{ post.content.rendered | removeHTMLTags | ellipses | apostrophe | quote1 | quote2 | hyphen | ampersand }}</p>
 	</div>
 
 </div>
