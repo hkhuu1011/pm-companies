@@ -5,7 +5,7 @@ app.controller('HomeController', ['$scope', 'companies', function($scope, compan
 	});
 }]);
 
-app.controller('CompanyController', ['$scope', '$rootScope', '$routeParams', '$http', 'articles', function($scope, $rootScope, $routeParams, $http, articles) {
+app.controller('CompanyController', ['$scope', '$routeParams', '$http', 'articles', function($scope, $routeParams, $http, articles) {
 	articles.success(function(data) {
 		$scope.articles = data;
 		console.log('articles', $scope.articles);
@@ -13,7 +13,7 @@ app.controller('CompanyController', ['$scope', '$rootScope', '$routeParams', '$h
 
 }]);
 
-app.controller('ArticleController', ['$scope', '$rootScope', '$routeParams', '$http', 'articles', function($scope, $rootScope, $routeParams, $http, articles) {
+app.controller('ArticleController', ['$scope', '$routeParams', '$http', 'articles', function($scope, $routeParams, $http, articles) {
 	articles.success(function(data) {
 		$scope.post = data[$routeParams.id];
 		console.log('posts', $scope.post);
