@@ -58,6 +58,7 @@ h2.entry-title a {
 a.company-name {
 	font-family: 'Roboto Slab', serif;
 	font-size: 26px;
+	line-height: 3;
 }
 
 p {
@@ -92,7 +93,7 @@ a {
 }
 
 a:visited {
-	color: #666666;
+	color: #122439;
 }
 
 a:hover,
