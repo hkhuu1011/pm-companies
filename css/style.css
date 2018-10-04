@@ -105,14 +105,29 @@ body {
 }
 
  /*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 414px) and (max-width: 736px) {
+@media (max-width: 736px) {
+	.img-article {
+		width: 100%;
+		height: auto;
+	}
+}
 
+ /*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 414px) {
+	.img-article {
+		width: 100%;
+		height: auto;
+	}
 }
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 375px) {
 	a.company-name {
 		font-size: 18px;
+	}
+	.img-article {
+		width: 100%;
+		height: auto;
 	}
 }
 
@@ -123,10 +138,6 @@ body {
 	}
 	.list {
 		padding: 25px 12px;
-	}
-	.img-article {
-		width: 100%;
-		height: auto;
 	}
 }
 
