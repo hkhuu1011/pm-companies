@@ -1,4 +1,4 @@
-app.controller('ArticleController', ['$scope', '$routeParams', '$http', 'articles', function($scope, $routeParams, $http, articles) {
+app.controller('ArticleController', ['$scope', '$routeParams', 'articles', function($scope, $routeParams, articles) {
 	articles.success(function(data) {
 		$scope.post = data[$routeParams.id];
 		console.log('posts', $scope.post);

@@ -1,4 +1,4 @@
-app.controller('CompanyController', ['$scope', '$routeParams', '$http', 'articles', function($scope, $routeParams, $http, articles) {
+app.controller('CompanyController', ['$scope', 'articles', function($scope, articles) {
 	articles.success(function(data) {
 		$scope.articles = data;
 		console.log('articles', $scope.articles);
