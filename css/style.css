@@ -48,6 +48,10 @@ h2.entry-title {
 	text-align: left
 }
 
+h2.article-title {
+	font-family: 'Roboto Slab', serif;
+}
+
 h1.site-title a,
 p.site-title a,
 h2.entry-title a {
@@ -61,7 +65,13 @@ a.company-name {
 }
 
 p {
+	font-family: 'Roboto', sans-serif;
 	margin-bottom: 1.5em;
+	color: #666666;
+}
+
+small {
+	color: #4985AD;
 }
 
 /*--------------------------------------------------------------
