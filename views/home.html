@@ -1,6 +1,6 @@
 <div class="container" ng-controller="HomeController">
 	<div ng-repeat="company in companies" class="list">
-		<a href="#/{{ company.id }}" class="company-name">{{ company.name | ellipses | apostrophe | quote1 | quote2 | hyphen | ampersand }}</a>
+		<a href="#/{{ company.id }}" class="company-name" ng-click="reloadPage();">{{ company.name | ellipses | apostrophe | quote1 | quote2 | hyphen | ampersand }}</a>
 	</div>
 
 </div>
