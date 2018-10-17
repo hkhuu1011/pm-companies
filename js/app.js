@@ -1,6 +1,6 @@
-var app = angular.module('PMCompanies', ['ngRoute']);
+var app = angular.module('PMCompanies', ['ngRoute', 'ngAnimate']);
 
-app.config(function ($routeProvider) {
+app.config(function ($routeProvider, $locationProvider) {
 	$routeProvider
 		.when('/', {
 			controller: 'HomeController',
@@ -17,7 +17,10 @@ app.config(function ($routeProvider) {
 		.otherwise({
 			redirectTo: '/'
 		});
+
+	$locationProvider.hashPrefix('');
 });
+
 
 // Filter to remove HTML tags in content
 app.filter('removeHTMLTags', function() {
