@@ -1,9 +1,10 @@
-<div class="container">
-	<div class="section-article">
-		<img class="img-article" ng-src="{{ post.better_featured_image.source_url}}" />
-		<h2 class="article-title">{{ post.title.rendered | ellipses | apostrophe | quote1 | quote2 | hyphen | ampersand }}</h2>
-		<small>{{ post.date | date }}</small>
-		<p>{{ post.content.rendered | removeHTMLTags | ellipses | apostrophe | quote1 | quote2 | hyphen | ampersand }}</p>
+<div id="page3">
+	<div class="container">
+		<div class="section-article">
+			<img class="img-article" ng-src="{{ post.better_featured_image.source_url}}" />
+			<h2 class="article-title">{{ post.title.rendered | ellipses | apostrophe | quote1 | quote2 | hyphen | ampersand }}</h2>
+			<small>{{ post.date | date }}</small>
+			<p>{{ post.content.rendered | removeHTMLTags | ellipses | apostrophe | quote1 | quote2 | hyphen | ampersand }}</p>
+		</div>
 	</div>
-
 </div>
