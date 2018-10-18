@@ -221,3 +221,40 @@ footer.site-footer {
 footer.site-footer a {
 	color: #777;
 }
+
+/*--------------------------------------------------------------
+# Page Animation
+--------------------------------------------------------------*/
+
+/*#routedContent.ng-enter{
+    transform: translateX(-500px);
+    opacity: 0;
+
+    -webkit-transition: all 0.45s cubic-bezier(1,.01,0,.99);
+    -moz-transition: all 0.45s cubic-bezier(1,.01,0,.99);
+    -ms-transition: all 0.45s cubic-bezier(1,.01,0,.99);
+    -o-transition: all 0.45s cubic-bezier(1,.01,0,.99);
+    transition: all 0.45s cubic-bezier(1,.01,0,.99);
+}
+
+#routedContent.ng-enter-active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+#routedContent.ng-leave{
+    transform: translateX(0);
+    opacity: 1;
+
+    -webkit-transition: all 0.45s cubic-bezier(1,.01,0,.99);
+    -moz-transition: all 0.45s cubic-bezier(1,.01,0,.99);
+    -ms-transition: all 0.45s cubic-bezier(1,.01,0,.99);
+    -o-transition: all 0.45s cubic-bezier(1,.01,0,.99);
+    transition: all 0.45s cubic-bezier(1,.01,0,.99);
+}
+
+#routedContent.ng-leave-active{
+    transform: translateX(500px);
+    opacity: 0;
+}
+*/
